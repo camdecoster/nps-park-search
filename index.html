@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NPS Park Search</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="body-container">
+        <header>
+            <h1>NPS Park Search</h1>
+            <p>A tool to search for National Parks with user given criteria.</p>
+        </header>
+        <main>
+            <form id="js-form">
+                <label for="js-park-states">Select states for search:</label>
+                <br>
+                <select id="js-park-states" size="5" multiple required>
+                    <option value="al">Alabama</option>
+                    <option value="ak">Alaska</option>
+                    <option value="ar">Arkansas</option>
+                </select>
+                <br>
+                <br>
+                <label for="js-max-results">Maximum Results</label>
+                <br>
+                <input id="js-max-results" type="number" value="10" required />
+                <br>
+                <input id="js-submit" type="submit" />
+            </form>
+            <section id="js-error">
+                <p id="js-error-message" class="error-message"></p>
+            </section>
+            <section id="js-results" class="results hidden">
+                <h2>Repositories</h2>
+                <ul id="js-results-list">
+
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

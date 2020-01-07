@@ -1,0 +1,16 @@
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
